@@ -81,7 +81,7 @@ class _MyAppState extends State<MyApp> {
     return MaterialApp(
       home: Scaffold(
         appBar: AppBar(
-          title: Text('Personality Demo  App'),
+          title: Text('Personality Demo App'),
         ),
         body: _questionIndex < _questions.length
             ? Quiz(
@@ -90,6 +90,7 @@ class _MyAppState extends State<MyApp> {
                 questions: _questions,
               )
             : Result(_totalScore, _resetQuiz),
+        // result should be shown.
       ),
     );
   }

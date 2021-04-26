@@ -24,6 +24,7 @@ class Result extends StatelessWidget {
   Widget build(BuildContext context) {
     return Center(
       child: Column(
+        mainAxisAlignment: MainAxisAlignment.spaceAround,
         children: <Widget>[
           Text(
             resultPhrase,
@@ -34,6 +35,7 @@ class Result extends StatelessWidget {
             onPressed: resetHandler,
             child: Text(
               'Restart Quiz!',
+              style: TextStyle(fontSize: 30, fontWeight: FontWeight.bold),
             ),
             style: ButtonStyle(
                 foregroundColor: MaterialStateProperty.all(Colors.blue)),
